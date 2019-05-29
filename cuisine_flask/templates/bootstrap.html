@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Cuisine Classifier</title>
+    <style>
+        body {background-color: whitesmoke;}
+        h1   {color: #e3f2fd;}
+        h3   {color: #e3f2fd;}
+        p    {color: #e3f2fd;}
+
+        body {
+            background-image: url(http://fishermanslandingrestaurant.com/wp-content/uploads/2014/05/main_background2.png);
+            background-size: 100% auto; 
+            background-repeat: no-repeat;
+            background-position: center center;
+        }
+
+    </style>
+
+
+  </head>
+  <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="/">Cuisine Classifier</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/about">About</a>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container">
+                    <div class="row d-flex justify-content-center"> 
+                        <div class="col-sm-7 " >
+                            <h1 class="display-4 mt-5 d-flex justify-content-center">Check your Cuisine!</h1>
+                            <br>
+                            
+
+                                <p class="lead">
+                                    <form action="/">
+
+                                        <br>
+                                        <p>
+                                        Enter a dish below:
+                                        </p>
+                                        <input class="form-control form-control-lg" type="text" name="input" value="{{x_input}}" placeholder="McDonald's double quarter pounder with cheese (for example)">
+                                        <br>
+                                        <!-- <br>
+                                        <button class="btn btn-light" type="submit" value="Submit" method="get" data-toggle="modal" data-target="prediction">
+                                            Submit
+                                        </button> -->
+                                    
+                                        <button type="submit" value="Submit" class="btn btn-light" data-toggle="modal" data-target="#prediction" method="get">
+                                                Submit
+                                              </button>
+                                    
+                                    
+                                    </form>
+
+                                    <br>
+
+                                    <div class="container">
+                                        <h3 class="text-center" placeholder="">
+                                            {{prediction}}
+                                        </h3>
+                                    </div>
+
+
+                                    
+                                </p>
+        
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                    
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

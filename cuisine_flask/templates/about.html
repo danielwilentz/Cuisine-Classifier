@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>My about page!</title>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
+            <a class="navbar-brand" href="/">Cuisine Classifier</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="/about">About</a>
+                </div>
+            </div>
+        </nav>
+    
+        <div class="container">
+                <div class="row"> 
+                    <div class="col-sm-8" >
+                        <h1 class="display-4 mt-5">About the Project</h1>
+                        <br>
+                        
+    
+                            <p class="lead">
+    
+                                This project is primarily a means for me to explore the work flow
+                                and techniques associated with NLP (natural language processing)
+                                in an unsupervised setting. To create the Cuisine Classifier, I 
+                                grabbed titles from 48,000 posts on the subreddit 
+                                <a href="https://reddit.com/r/foodporn">r/foodporn</a> 
+                                corresponding to the top 1000 posts per month for the last 4 years (48 months).
+                                After obtaining my data, I employed various methods to clean it (elementary
+                                methods such as making all text lowercase/removing punctuation, and more advanced
+                                methods such as filtering advertisements and non-english posts). Once I cleaned
+                                the text, I tried a variety of vectorization/dimensionality-reduction/clustering 
+                                techniques. My best solution involved using a 
+                                <a href="https://en.wikipedia.org/wiki/Tf%E2%80%93idf">TF-IDF vectorizer</a> 
+                                coupled with 
+                                <a href="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">Non-Negative Matrix Factorization</a>.
+
+                                <br>
+                                <br>
+                            </p>
+    
+                            <h1 class="display-4 mt-4">About the Author</h1>
+                        <br>
+                            <h3 >Dan Wilentz</h3>
+    
+                            <p class="lead">
+
+                                Data Scientist focused on data analysis and predictiving modeling. 
+                                Currently studying statistical modeling and machine learning techniques and theory
+                                at Metis, an immersive, selective 12-week program in San Francisco. Implementing 
+                                projects with an emphasis on demographics, natural language processing, and 
+                                clustering. Received Master's degree (M.Eng) in Aerospace Engineering and 
+                                Bachelor's degree (BS) in Mechanical Engineering from Cornell University.
+                                Previously worked as a robotics lab technician at Osaro (San Francisco), 
+                                executing data collection, cleaning, and preprocessing to support object detection
+                                models for industrial manufacturing robots to be deployed in factory and warehouse settings
+ 
+                                <br>
+                                <br>
+                                To learn more about the author, please visit:
+                                <br>
+                                <a href="https://github.com/danielwilentz">GitHub</a>
+                                <br>
+                                <a href="https://www.linkedin.com/in/danielwilentz/">LinkedIn</a>
+                                <br>
+                                <br>
+                            </p>
+                 
+                    </div>
+                </div>
+            </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
